@@ -1,21 +1,40 @@
-/* .header {
-  padding: 20px 0;
+.header {}
+
+.container {}
+
+.header-container {}
+
+.header-logo {}
+
+.header-logo-link {}
+
+.header-logo-icon {}
+
+.header-logo-text {}
+
+.mobile-menu-btn {
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+.header-menu-icon {
+
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
+.header-overlay {}
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
+.header-nav-wrap {}
+
+.close-menu-btn {}
+
+.header-close-icon {}
+
+.header-navigation {}
+
+.header-navigation-list {}
+
+.header-navigation-item {}
+
+.current {}
+
+.header-navigation-link {}
+
+.header-btn {}
