@@ -1,0 +1,31 @@
+.reviews{
+    background: #fbfbfb;
+}
+
+.reviews-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04167;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.reviews-title span{
+    color: #576f35;
+}
+
+/* Looks different!!!! */
+.reviews-subtitle{
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #141414;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
