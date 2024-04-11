@@ -15,16 +15,15 @@ p{
 }
 
 .container {
-    max-width: 100%;
+    width: 100%;
+    max-width: 320px;
     padding: 0 20px;
     margin: 0 auto;
 }
 .section{
     padding: 80px 20px;
 }
-.section:first-child{
-    padding-top: 20px;
-}
+
 .section:last-child{
     padding: 40px;
 }
@@ -43,10 +42,7 @@ p{
           .section {
               padding: 100px 32px;
           }
-    
-          .section:first-child {
-              padding: 32px;
-          }
+
     
           .section:last-child {
               padding-bottom: 40px;
@@ -61,9 +57,6 @@ p{
     }
     .section{
         padding: 100px;
-    }
-    .section:first-child{
-        padding-top: 32px;
     }
     .section:last-child{
         padding:50px ;
