@@ -27,31 +27,22 @@ p{
     padding: 80px 20px;
 }
 
-.section:last-child{
-    padding: 40px;
-}
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
     .container {
         width: 100%;
+}
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;   
     }
-          }
-    
           .section {
               padding: 100px 32px;
           }
 
-    
-          .section:last-child {
-              padding-bottom: 40px;
-          }
-
-}
+        }
 
 @media screen and (min-width: 1280px) {
     .container {
@@ -59,9 +50,6 @@ p{
 
     }
     .section{
-        padding: 100px;
-    }
-    .section:last-child{
-        padding:50px ;
+        padding: 100px 100px;
     }
 }
