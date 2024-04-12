@@ -15,6 +15,10 @@
   margin-bottom: 14px;
 }
 
+/* .footer-logo-tablet {
+  display: none;
+} */
+
 .footer-logo-icon {
 }
 
@@ -70,25 +74,28 @@
 }
 
 .footer-privacy {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 12px;
   line-height: 1.33333;
   letter-spacing: -0.01em;
-  color: rgba(251, 251, 251, 0.5);
+  color: rgba(251, 251, 251, 0.5); */
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
 }
 
-.footer-privacy-cookie{
-    display: flex;
-    gap: 8px;
-    margin-right: 49px;
-
+.footer-privacy-cookie {
+  display: flex;
+  gap: 8px;
+  margin-right: 49px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.01em;
+  color: rgba(251, 251, 251, 0.5);
 }
 
 .footer-privacy-policy {
-
 }
 
 .footer-privacy-slash {
@@ -98,5 +105,95 @@
 }
 
 .footer-copyright {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.01em;
+  color: rgba(251, 251, 251, 0.5);
+}
 
+/* ============FOOTER-TABLET============== */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .footer-wrap {
+    display: flex;
+  }
+
+  .footer-content {
+    margin-right: 224px;
+  }
+
+  .footer-logo {
+    /* display: none; */
+    margin-bottom: 25px;
+  }
+
+  /* .footer-logo-tablet {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    fill: #fbfbfb;
+    margin-bottom: 25px;
+  } */
+
+  .footer-slogan {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-nav-adress-wrap {
+    max-width: 215px;
+  }
+
+  .footer-nav {
+    margin-bottom: 64px;
+  }
+
+  .footer-nav-list {
+    gap: 25px;
+  }
+
+  .footer-nav-link {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
+  .footer-adress-list {
+    gap: 25px;
+  }
+
+  .footer-adress-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+  }
+
+  .footer-privacy {
+    /* display: flex; */
+    margin-bottom: 32px;
+  }
+
+  .footer-privacy-cookie {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+    margin-right: 284px;
+  }
+
+  .footer-copyright {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+  }
 }
