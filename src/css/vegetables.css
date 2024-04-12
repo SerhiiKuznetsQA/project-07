@@ -5,12 +5,11 @@
 .vegetables-title {
     font-weight: 600;
     font-size: 48px;
-    line-height: 1.04167;
+    line-height: 1.04;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fbfbfb;
     margin-bottom: 20px;
-    max-width: 335px;
     text-align: start;
 }
 .vegetables-span {
@@ -50,76 +49,11 @@
 .vegetables-item-text {
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #141414;
-    margin-bottom: 14px;
-}
-
-@media screen and (min-width: 375px) {
-    
-.vegetables {
-    background: #7a3145;
-    padding: 80px 0;
-}
-
-.vegetables-title {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.04167;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-    margin-bottom: 20px;
-    max-width: 335px;
-    text-align: start;
-}
-
-.vegetables-span {
-    color: rgba(251, 251, 251, 0.3);
-}
-
-.vegetables-text {
-    font-weight: 500;
-    font-size: 14px;
     line-height: 1.29;
-    color: #fbfbfb;
-    margin-bottom: 40px;
-}
-
-.vegetables-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.vegetables-item {
-    margin: 0 auto;
-    width: 100%;
-    border-radius: 40px;
-    background: #fbfbfb;
-    padding: 32px 26px;
-}
-
-.vegetables-item-title {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    color: #7a3145;
-    margin-bottom: 12px;
-}
-
-.vegetables-item-text {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28571;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #141414;
     margin-bottom: 14px;
-}
 }
 
 @media screen and (min-width: 768px) {
@@ -132,21 +66,21 @@
         font-weight: 600;
         font-size: 64px;
         line-height: 1;
+        margin-bottom: 50px;
     }
 
     .vegetables-text {
         font-size: 16px;
         line-height: 1.25;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         width: 626px;
     }
 
     .vegetables-list {
-        width: 704px;
         flex-direction: row;
         gap: 28px 20px;
+        min-width: 704px;
     }
-
     .vegetables-item { 
         width: calc((100% - 20px) / 2);
     }
@@ -156,9 +90,11 @@
 
 @media screen and (min-width: 1280px) {
 
-
+    .vegetables-title {
+        margin-bottom: 25px;
+    }
     .vegetables-list {
-        width: 1080px;
+        min-width: 1080px;
         gap: 28px 21px;
     }
 
