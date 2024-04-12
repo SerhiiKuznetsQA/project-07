@@ -1,4 +1,12 @@
 /* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 h1,
 h2,
 h3,
