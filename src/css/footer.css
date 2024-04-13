@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   background: #7a3145;
 }
 
@@ -115,9 +115,9 @@
 /* ============FOOTER-TABLET============== */
 
 @media screen and (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 768px;
-  }
+  } */
 
   .footer-wrap {
     display: flex;
@@ -196,4 +196,4 @@
     letter-spacing: -0.01em;
     color: rgba(251, 251, 251, 0.5);
   }
-}
+} 
