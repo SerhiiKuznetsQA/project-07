@@ -1,4 +1,3 @@
-
 .hero {
     max-width: 375px;
     padding: 100px 0px 0px 0px;
@@ -37,22 +36,20 @@
     background-color: #576F35;
     height: 370px;
     background-repeat: no-repeat;
-    background-image: linear-gradient(
-    rgba(20, 20, 20, 0.2), 
-    rgba(20, 20, 20, 0.2)),
-    url(../img/hero-section/hero-mob/hero-mob-x1-min.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
+            rgba(20, 20, 20, 0.2)),
+        url(/img/hero-section/hero-mob/hero-mob-x1-min.jpg);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-pictures {
-        background-image: linear-gradient(
-            rgba(20, 20, 20, 0.2), 
-            rgba(20, 20, 20, 0.2)),
-         url(../img/hero-section/hero-mob/hero-mob-x2-min.jpg);
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2),
+                rgba(20, 20, 20, 0.2)),
+            url(/img/hero-section/hero-mob/hero-mob-x2-min.jpg);
     }
- }
+}
 
 /* *===================================TAB====================================================== */
 
@@ -90,23 +87,21 @@
 .hero-pictures {
     width: 768px;
     height: 539px;
-    background-image: linear-gradient(
-            rgba(20, 20, 20, 0.2), 
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
             rgba(20, 20, 20, 0.2)),
     url(../img/hero-section/hero-tab/hero-tab-x1-min.jpg);    
         }
         
-        @media screen and (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .hero-pictures {
-                background-image: linear-gradient(
-                    rgba(20, 20, 20, 0.2), 
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-pictures {
+            background-image: linear-gradient(rgba(20, 20, 20, 0.2),
                     rgba(20, 20, 20, 0.2)),
-                 url(../img/hero-section/hero-tab/hero-tab-x2-min.jpg);
-            } 
+                url(/img/hero-section/hero-tab/hero-tab-x2-min.jpg);
+        }
 
-}
+    }
 }
 
 /* *=========================DESC============================================================= */
@@ -148,22 +143,20 @@
   .hero-pictures {
     width: 650px;
     height: 800px;
-    background-image: linear-gradient(
-    rgba(20, 20, 20, 0.2), 
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
     rgba(20, 20, 20, 0.2)),
     url(../img/hero-section/hero-desc/hero-desc-x1-min.jpg);  
 }
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-pictures {
+            background-image: linear-gradient(rgba(20, 20, 20, 0.2),
+                    rgba(20, 20, 20, 0.2)),
+                url(/img/hero-section/hero-desc/hero-desc-x2-min.jpg);
+        }
 
-@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero-pictures {
-        background-image: linear-gradient(
-            rgba(20, 20, 20, 0.2), 
-            rgba(20, 20, 20, 0.2)),
-         url(../img/hero-section/hero-desc/hero-desc-x2-min.jpg);
+
     }
-
- 
-}
 }
