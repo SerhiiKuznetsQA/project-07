@@ -1,4 +1,4 @@
-.footer {
+.footer-container {
   background: #7a3145;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -86,7 +86,11 @@
 /* ============FOOTER-TABLET============== */
 
 @media screen and (min-width: 768px) {
+
+  .footer-container {
+
   .footer {
+
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -132,6 +136,13 @@
   .footer-contacts {
     margin-bottom: 100px;
     min-width: 215px;
+
+  }
+
+  .footer-adress-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
   }
 
   .footer-adress-item:not(:last-child) {
@@ -164,7 +175,11 @@
 /* ==============FOOTER DESKTOP================= */
 
 @media screen and (min-width: 1280px) {
+
+  .footer-container {
+
   .footer {
+
     padding-top: 50px;
     padding-bottom: 50px;
   }
