@@ -109,7 +109,7 @@ font-weight: 500;
   line-height: 1.33333;
   letter-spacing: -0.01em;
   color: rgba(251, 251, 251, 0.5);
-}
+} 
 
 /* ============FOOTER-TABLET============== */
 
@@ -194,5 +194,51 @@ font-weight: 500;
     line-height: 1.11;
     letter-spacing: -0.01em;
     color: rgba(251, 251, 251, 0.5);
+  }
+}
+
+/* ==============FOOTER DESKTOP================= */
+
+@media screen and (min-width: 1280px) {
+
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-wrap {
+    margin-bottom: 125px;
+  }
+
+  .footer-content {
+    margin-right: 302px;
+  }
+
+  .footer-menu {
+    margin-bottom: 0;
+  }
+
+  .footer-contacts {
+    margin-bottom: 0;
+  }
+
+  .footer-nav-adress-wrap {
+    display: flex;
+    margin-left: auto;
+    max-width: 516px;
+  }
+
+  .footer-nav {
+    margin-right: 121px;
+  }
+
+  .footer-privacy {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-privacy-cookie {
+    margin-right: 602px;
   }
 } 
