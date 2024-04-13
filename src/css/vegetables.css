@@ -55,6 +55,9 @@
     color: #141414;
     margin-bottom: 14px;
 }
+.vegetables-image{
+    margin: 0 auto;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -90,7 +93,7 @@
 
 @media screen and (min-width: 1280px) {
     .vegetables .container{
-        width: auto;
+        width: 1080px;
     }
 
     .vegetables-title {
