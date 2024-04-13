@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   background: #7a3145;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -160,7 +160,6 @@
     letter-spacing: -0.01em;
     color: rgba(251, 251, 251, 0.5);
   }
-}
 
 /* ==============FOOTER DESKTOP================= */
 
@@ -207,3 +206,4 @@
     margin-right: 602px;
   }
 }
+
