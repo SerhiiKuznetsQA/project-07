@@ -79,6 +79,10 @@
     width: 100%;
     height: 46px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
 }
 
 input::placeholder {
@@ -119,6 +123,10 @@ input::placeholder {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
 }
 
 .order-form-textarea:focus {
@@ -142,12 +150,16 @@ textarea::placeholder {
     text-transform: uppercase;
     text-align: center;
     color: #fbfbfb;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-btn:hover,
+.order-form-btn:focus {
+    background-color: #384B1E;
 }
 
 .order-soc-networks {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 20px;
     border-radius: 30px;
@@ -186,6 +198,10 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
+    .your-order-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     .your-order-title-wrap {
             gap: 25px;
             padding: 0px 96px 0px 32px;
@@ -209,7 +225,6 @@ textarea::placeholder {
     
         .order-form {
             padding: 50px 100px;
-            border-radius: 30px;
             max-width: 628px;
         }
 
@@ -250,4 +265,27 @@ textarea::placeholder {
             font-size: 32px;
             line-height: 1;
         }
+}
+
+@media screen and (min-width: 1280px) {
+        .your-order-container {
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+
+        .your-order-title-wrap {
+            max-width: 751px;
+            padding: 0;
+        }
+
+        .order-form-wrap {
+            padding: 0;
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        .order-form {
+            padding: 50px;
+            max-width: 529px;
+        } 
 }
