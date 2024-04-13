@@ -40,7 +40,7 @@ p{
         padding: 0 32px;   
     }
           .section {
-              padding: 100px;
+              padding: 100px 0;
           }
 
         }
@@ -52,6 +52,6 @@ p{
 
     }
     .section{
-        padding: 100px;
+        padding: 100px 0;
     }
 }
