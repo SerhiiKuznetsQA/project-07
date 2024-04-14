@@ -59,8 +59,13 @@
 @media screen and (min-width: 768px) {
 
     .vegetables {
-        padding: 100px 0;
+    
     }
+        .vegetables-image-wrap {
+            display: flex;
+            /* align-content: center; */
+            justify-content: center;
+        }
 
     .vegetables-title {
         font-weight: 600;
@@ -90,7 +95,7 @@
 
 @media screen and (min-width: 1280px) {
     .vegetables {
-        padding: 100px;
+    
     }
 
     .vegetables .container{
@@ -101,7 +106,7 @@
         margin-bottom: 25px;
     }
     .vegetables-list {
-        min-width: 1080px;
+   
         gap: 28px 21px;
     }
 
