@@ -2,6 +2,11 @@
     background: #7a3145;
     padding: 80px 0;
 }
+ .vegetables-image-wrap {
+     display: flex;
+     /* align-content: center; */
+     justify-content: center;
+ }
 .vegetables-title {
     font-weight: 600;
     font-size: 48px;
@@ -61,11 +66,7 @@
     .vegetables {
     
     }
-        .vegetables-image-wrap {
-            display: flex;
-            /* align-content: center; */
-            justify-content: center;
-        }
+       
 
     .vegetables-title {
         font-weight: 600;
