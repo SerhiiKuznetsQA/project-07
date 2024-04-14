@@ -7,7 +7,9 @@
 
 
 
-.header-container {}
+.header-container {
+  /* overflow-x: hidden; */
+}
 
 .header-wrap-main {
   display: flex;
@@ -17,11 +19,15 @@
 }
 
 .header-logo {
-  display: flex;
-  gap: 4px;
+  /* display: flex;
+  gap: 4px; */
 }
 
-.header-logo-link {}
+.header-logo-link {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
 
 .header-logo-icon {
   fill: #FBFBFB;
@@ -65,7 +71,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  
+
 }
 
 .header-nav-wrap {
@@ -91,9 +97,7 @@
   stroke: #FBFBFB;
 }
 
-.header-navigation {
-
-}
+.header-navigation {}
 
 
 .header-navigation-list {
@@ -108,37 +112,44 @@
 
 
 .header-navigation-link {
+  border: 1px solid rgba(251, 251, 251, .4);
   display: block;
-  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 12px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: -0.02em;
+  min-width: 115px;
+  width: 100%;
+  letter-spacing: -.02em;
   text-align: center;
-  color: #FBFBFB;
-  border: 1px solid rgba(251, 251, 251, 0.4);
-  border-radius: 12px;
-  padding: 12px 24px;
-  height: 42px;
+  color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
-  color: #7A3145;
-  border: 1px solid rgba(251, 251, 251, 0.4);
-  border-radius: 12px;
-  padding: 12px 16px;
-  /* width: 115px;
-  height: 42px; */
-  background-color: #FBFBFB;
+    background-color: #fbfbfb;
+    color: #7a3145;
 }
 
-.menu-reviews {
+.current:hover {
+  color: rgba(122, 49, 69, 0.7);
+}
+
+.current:focus {
+  background-color: transparent;
+  color: #FBFBFB;
+
+
+}
+
+/* .menu-reviews {
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 12px;
   padding: 12px 32px;
   width: 114px;
   height: 42px;
-}
+} */
 
 .header-btn {
   align-self: flex-end;
@@ -156,6 +167,21 @@
   display: block;
   margin: 0 auto;
   /* margin-bottom: 40px; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.header-btn:hover {
+  color: rgba(122, 49, 69, 0.7);
+}
+
+.header-btn:focus {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 30px;
+  background-color: transparent;
+  color: #FBFBFB;
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -172,32 +198,66 @@
     width: 168px;
     height: 15px;
   }
-  
- 
+    .header-navigation-link{
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .header-navigation-link:hover{
+        color:#7A3145 ;
+        background-color: #FBFBFB;
+    }
+    .current:hover,
+    .current:focus{
+      color: #FBFBFB;
+      background-color: #7A3145;
+    }
 
+
+  .header-btn {
+    font-size: 18px;
+    line-height: 1.11;
+    color: #7A3145;
+    padding: 16px 32px;
+    height: 52px;
+    margin-bottom: 0;
+  }
+
+  .header-btn:hover {
+    color: #FBFBFB;
+    /* color: rgba(122, 49, 69, 0.7); */
+    background: #622133;
+  }
+
+  .header-btn:focus {
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 30px;
+    background-color: transparent;
+    color: #FBFBFB;
+  }
 
   .header-overlay {
     left: 53%;
-  width: 47%;
-  } 
-     .header-overlay::before {
-       content: "";
-       position: absolute;
-       top: 0;
-       right: 100%;
-       width: 180%;
-       height: 100%;
-       background-image: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4));
-       z-index: -1;
-       opacity: 0;
-       visibility: hidden;
-       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
-  
-     .header-overlay.is-open::before {
-       opacity: 1;
-       visibility: visible;
-     }
+    width: 47%;
+  }
+
+  .header-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 180%;
+    height: 100%;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4));
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-overlay.is-open::before {
+    opacity: 1;
+    visibility: visible;
+  }
 
 
   .header-menu-icon {
@@ -208,17 +268,20 @@
 
 @media screen and (min-width: 1280px) {
 
-  .header-container{
-padding-top: 32px;
-padding-left: 100px;
-padding-right: 100px;
+  .header-container {
+    max-width: 1280px;
+    padding-top: 32px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
-  .header-logo{
-        padding-top: 17px;
+
+  .header-logo {
+    padding-top: 17px;
   }
+
   .header-wrap-main {
-      padding-top: 0;
-      display: block;
+    padding-top: 0;
+    display: block;
 
   }
 
@@ -229,21 +292,32 @@ padding-right: 100px;
   .close-menu-btn {
     display: none;
   }
-  .header-container{
+
+  .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+.current{
+  background-color: transparent;
+  color: #fbfbfb;
+}
+.current:hover{
+  color:#7A3145;
+  background-color: #FBFBFB;
+}
   .header-overlay {
     padding: 0;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    position: sticky;
+    position: static;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    width: 100%;
+    height: 100%;
     gap: 20px;
     background-color: transparent;
   }
@@ -256,8 +330,14 @@ padding-right: 100px;
     justify-content: center;
 
   }
-.header-navigation{
-}
+  .header-overlay::before{
+    display: none;
+  }
+  /* .header-btn{
+    margin: 0;
+  } */
+
+  .header-navigation {}
 
   .header-btn {
     font-size: 18px;
@@ -269,23 +349,9 @@ padding-right: 100px;
     margin-bottom: 0;
     margin: 0;
   }
-    .current{
-  
-      /* height: 44px; */
-      color: #FBFBFB;
-      font-size: 16px;
-      line-height: 1.25;
-      background-color: transparent;
+  .header-btn:focus{
+    color: #7A3145;
+    background-color: #FBFBFB;
+  }
 
-    }
- .header-navigation-link{
-  padding: 12px 12px;
-  line-height: 1.25;
-  font-size: 16px;
-  margin-bottom: 0;
-  /* height: 44px; */
- }
-.menu-reviews {
-  width: 81px;
-}
 }

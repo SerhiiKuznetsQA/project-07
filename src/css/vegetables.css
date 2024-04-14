@@ -89,6 +89,13 @@
 
 
 @media screen and (min-width: 1280px) {
+    .vegetables {
+        padding: 100px;
+    }
+
+    .vegetables .container{
+        width: auto;
+    }
 
     .vegetables-title {
         margin-bottom: 25px;
