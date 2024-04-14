@@ -35,6 +35,7 @@
 }
 
 .footer-nav-link {
+  font-weight: 600;
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.01em;
@@ -54,6 +55,7 @@
 }
 
 .footer-adress-link {
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.01em;
@@ -62,7 +64,7 @@
 
 .footer-privacy {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-privacy-cookie {
@@ -77,6 +79,7 @@
 }
 
 .footer-copyright {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: -0.01em;
@@ -86,7 +89,6 @@
 /* ============FOOTER-TABLET============== */
 
 @media screen and (min-width: 768px) {
-
   .footer {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -124,54 +126,41 @@
   }
 
   .footer-nav-link {
-    font-weight: 600;
     font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.01em;
   }
 
   .footer-contacts {
     margin-bottom: 100px;
     min-width: 215px;
-
   }
 
   .footer-adress-item:not(:last-child) {
     margin-bottom: 25px;
   }
-
 
   .footer-adress-item:not(:last-child) {
     margin-bottom: 25px;
   }
 
   .footer-adress-link {
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.11;
-    letter-spacing: -0.01em;
   }
 
   .footer-privacy-cookie {
     font-size: 18px;
     line-height: 1.11;
-    letter-spacing: -0.01em;
-    color: rgba(251, 251, 251, 0.5);
-    /* margin-right: 284px; */
   }
 
   .footer-copyright {
     font-size: 18px;
     line-height: 1.11;
-    letter-spacing: -0.01em;
-    color: rgba(251, 251, 251, 0.5);
   }
 }
 
 /* ==============FOOTER DESKTOP================= */
 
 @media screen and (min-width: 1280px) {
-
   .footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -203,12 +192,8 @@
     margin-right: 121px;
   }
 
-  /* .footer-privacy {
-    display: flex;
-    justify-content: space-between;
-  } */
+  .footer-nav-link {
+    white-space: nowrap;
+  }
 
-  /* .footer-privacy-cookie {
-    margin-right: 602px;
-  } */
 }
