@@ -1,7 +1,10 @@
+.your-order-section {
+    background-color: #7A3145;
+}
+
 .your-order-container {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: #7A3145;
 }
 
 .your-order-title-wrap {
