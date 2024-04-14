@@ -24,6 +24,7 @@
 .how-image {
   border-radius: 30px;
 }
+
 .how-content {
   padding: 80px 20px;
 }
@@ -41,9 +42,11 @@
   color: #fbfbfb;
   padding-bottom: 20px;
 }
+
 .how-sub-span {
   color: rgba(251, 251, 251, 0.3);
 }
+
 .how-text {
   font-weight: 500;
   font-size: 14px;
