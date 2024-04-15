@@ -71,5 +71,24 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+// Створення функції для лінивого завантаження зображень
+function lazyLoadImages() {
+  // Вибір всіх зображень, які мають атрибут data-src
+  var lazyImages = document.querySelectorAll("img[data-src]");
+
+  // Ітерація по кожному зображенню
+  lazyImages.forEach(function(img) {
+    // Присвоєння значення атрибуту src, яке міститься у data-src
+    img.src = img.dataset.src;
+
+    // Видалення атрибуту data-src після завантаження зображення
+    img.onload = function() {
+      img.removeAttribute("data-src");
+    };
+  });
+}
+
+// Виклик функції lazyLoadImages після завантаження сторінки
+document.addEventListener("DOMContentLoaded", lazyLoadImages);
 
 
