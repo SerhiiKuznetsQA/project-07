@@ -40,7 +40,7 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .how-sub-span {
@@ -52,7 +52,7 @@
   font-size: 14px;
   line-height: 1.28;
   color: #fbfbfb;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .how-list {
