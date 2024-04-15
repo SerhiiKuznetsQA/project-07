@@ -15,11 +15,11 @@
   </head>
   <body>
     <!-- Serhii -->
-    <header class="header">
+    <header class="header" aria-label="Main header">
   <div class="container header-container">
     <div class="header-wrap-main">
       <div class="header-logo">
-        <a href="./index.html" class="header-logo-link">
+        <a href="./index.html" class="header-logo-link" aria-label="Logo link">
           <svg class="header-logo-icon" width="16" height="16">
             <use href="/project-07/assets/symbol-defs-81e6f09f.svg#icon-logo-mob"></use>
           </svg>
@@ -28,38 +28,36 @@
           </svg>
         </a>
       </div>
-      <button type="button" class="burger-btn-mob js-open-menu">
+      <button type="button" class="burger-btn-mob js-open-menu" aria-label="Open menu">
         <svg class="header-menu-icon" width="32" height="32">
           <use href="/project-07/assets/symbol-defs-81e6f09f.svg#icon-burgermob"></use>
         </svg>
       </button>
     </div>
       <div class="header-overlay js-menu-container">
-        <button type="button" class="close-menu-btn js-close-menu"><svg class="header-close-icon" width="32" height="32">
+        <button type="button" class="close-menu-btn js-close-menu" aria-label="close menu"><svg class="header-close-icon" width="32" height="32">
             <use href="/project-07/assets/symbol-defs-81e6f09f.svg#icon-close-mob"></use>
           </svg></button>
-        <nav class="header-navigation">
+        <nav class="header-navigation" aria-label="Main navigation">
           <ul class="header-navigation-list">
             <li  class="header-navigation-item ">
-              <a href="#how-it-works" class="header-navigation-link current header-link">How It Works</a>
+              <a href="#how-it-work" class="header-navigation-link current header-link" aria-label="How It Works">How It Works</a>
             </li>
             <li class="header-navigation-item">
-              <a href="#vegetables" class="header-navigation-link header-link">Vegetables</a>
+              <a href="#vegetables" class="header-navigation-link header-link" aria-label="Vegetables" >Vegetables</a>
             </li>
             <li class="header-navigation-item">
-              <a href="#reviews" class="header-navigation-link menu-reviews header-link">Reviews</a>
+              <a href="#reviews" class="header-navigation-link menu-reviews header-link" aria-label="Reviews">Reviews</a>
             </li>
           </ul>
         </nav>
-        
-        <button type="button" class="header-btn">Shop now</button>
-  
+        <a class="header-btn header-link" aria-label='Shop now' href="#your-order-section">Shop now</a>
       </div>
 
   </div>
 </header>
     <!--Aня Бойко  -->
-    <section class="hero">
+    <section class="hero" aria-label="Main hero section">
    <div class="container hero-container">
       <div class="hero-content">
 
@@ -277,7 +275,7 @@
     </div>
 </section>
     <!-- Тетяна Котвицька -->
-    <section class="your-order-section">
+    <section class="your-order-section" id ="your-order-section">
     <div class="container your-order-container">
         <div class="your-order-title-wrap">
             <h2 class="your-order-title">
@@ -339,11 +337,11 @@
     </div>
 </section>
     <!-- Андрій Музика -->
-    <footer class="footer">
+    <footer class="footer" aria-label="Footer" >
   <div class="container">
     <div class="footer-wrap">
       <div class="footer-content">
-        <a class="footer-logo" href="./index.html">
+        <a class="footer-logo" href="./index.html" aria-label="Logo link">
           <svg class="footer-logo-icon" width="16" height="16">
             <use href="/project-07/assets/symbol-defs-81e6f09f.svg#icon-logo-mob"></use>
           </svg>
@@ -358,10 +356,10 @@
       </div>
       <div class="footer-nav-adress-wrap">
         <div class="footer-menu">
-          <nav class="footer-nav">
+          <nav class="footer-nav" aria-label="Footer navigation">
             <ul class="footer-nav-list">
               <li class="fotter-nav-item">
-                <a class="footer-nav-link" href="#how-it-works">how it works</a>
+                <a class="footer-nav-link" href="#how-it-work">how it works</a>
               </li>
               <li class="fotter-nav-item">
                 <a class="footer-nav-link" href="#vegetables">vegetables</a>
@@ -372,7 +370,7 @@
             </ul>
           </nav>
         </div>
-        <div class="footer-contacts">
+        <div class="footer-contacts" aria-label="Contact information">
           <address class="footer-adress">
             <ul class="footer-adress-list">
               <li class="footer-adress-item">
@@ -384,6 +382,7 @@
                 <a
                   class="footer-adress-link"
                   target="_blank"
+                  aria-label="Address: 1678 S. Pioneer Road Salt Lake City UT 84104"
                   href="https://www.google.com/maps?q=latitude,longitude"
                   >1678 S. Pioneer Road Salt Lake City UT 84104</a
                 >
@@ -404,7 +403,7 @@
         >
       </div>
       <a class="footer-copyright" target="_blank" href="./index.html"
-        ><span>&#169;</span>Green Harvest 2023</a
+        ><span aria-hidden="true">&#169;</span>Green Harvest 2023</a
       >
     </div>
   </div>
