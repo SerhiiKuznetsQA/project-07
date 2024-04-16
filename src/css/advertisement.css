@@ -11,84 +11,106 @@
     overflow: hidden;
 }
 
-.advertisement {
-    background-color: #fbfbfb;
+.advert-section .container {
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 100%;
+
 }
 
-.container-advertisement {
-    padding: 80px 10px;
-    max-width: 375px;
+.advert-section {
+    background-color: #fdfdfd;
 }
 
-.advertisement-text {
+.advert {
     font-weight: 600;
     font-size: 48px;
-    line-height: 50px;
     line-height: 1.04;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    padding-left: 10px;
-    transition: transform 300ms ease;
 }
 
-.advertisement-sale {
-    border-radius: 12px;
-    background-color: #576f35;
+.advert-text {
     padding: 0 10px;
 }
 
-.advertisement-text-sale {
-    color: #fbfbfb;
+.text-sale {
+    border-radius: 12px;
+    color: #fdfdfd;
+    background-color: #576F35;
+    padding: 8px 10px;
+    display: inline-block;
+    /* max-width:  320px; */
+}
+
+.second-part {
     font-weight: 600;
     font-size: 48px;
-    line-height: 50px;
     line-height: 1.04;
     letter-spacing: -0.01em;
     text-transform: uppercase;
+    display: block;
+    padding-left: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-    .container-advertisement {
-        padding: 100px 16px;
-        max-width: 768px;
+@media screen and (min-width: 768px) {
+
+    .advert-section .container {
+        padding: 100px 32px;
+        margin: 0 auto;
     }
 
-    .advertisement-sale {
-        max-width: 736px;
-        padding-left: 16px;
-    }
-
-    .advertisement-text-sale {
+    .second-part {
+        display: block;
+        padding-left: 0;
         font-size: 64px;
-        line-height: 70px;
+        line-height: 1.09375;
+        /* margin:0; */
+        width: 100%;
     }
 
-    .advertisement-text {
-        padding-left: 16px;
+    .advert-text {
+        padding: 0;
+    }
+
+    .text-sale {
+        border-radius: 12px;
+        color: #fdfdfd;
+        background-color: #576F35;
+        padding: 8px 13px;
+        display: inline-block;
+    }
+
+    .advert {
         font-size: 64px;
-        line-height: 70px;
+        line-height: 1.09375;
+        /* margin:0; */
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 1280px) {
-    .container-advertisement {
-        padding: 100px;
+@media screen and (min-width: 1280px) {
+    .advert-section .container {
+        padding: 100px 113px;
+        margin: 0 auto;
         max-width: 1280px;
     }
 
-    .advertisement-sale {
-        max-width: 808px;
-        padding: 0 0 0 13px;
+    .advert-section {
+        width: 100%;
     }
 
-    .advertisement-text-sale {
-        font-size: 76px;
-        line-height: 80px;
+    .advert {
+        font-weight: 600;
+        font-size: 74px;
+        line-height: 1.05;
+        /* margin:0; */
+        width: auto;
+        display: inline-block;
     }
 
-    .advertisement-text {
-        font-size: 76px;
-        line-height: 80px;
+    .second-part {
+        display: initial;
     }
+
 }
-
