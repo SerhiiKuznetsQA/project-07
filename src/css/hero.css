@@ -42,7 +42,8 @@
     background-image: linear-gradient(
     rgba(20, 20, 20, 0.2), 
     rgba(20, 20, 20, 0.2)),
-    url(../img/hero-section/hero-mob/hero-mob-x1-min.jpg);
+    /* url(/img/hero-section/hero-mob/hero-mob-x1-min.jpg); */
+    url(/img/hero-section/hero-mob/Back-mob_1x.webp);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -51,7 +52,8 @@
     .hero-pictures {
         background-image: linear-gradient(rgba(20, 20, 20, 0.2),
                 rgba(20, 20, 20, 0.2)),
-            url(/img/hero-section/hero-mob/hero-mob-x2-min.jpg);
+            /* url(/img/hero-section/hero-mob/hero-mob-x2-min.jpg); */
+            url(/img/hero-section/hero-mob/Back-mob_2x.webp);
     }
 }
 
@@ -95,7 +97,8 @@
     height: 539px;
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
             rgba(20, 20, 20, 0.2)),
-    url(../img/hero-section/hero-tab/hero-tab-x1-min.jpg);    
+    /* url(/img/hero-section/hero-tab/hero-tab-x1-min.jpg);*/
+    url(/img/hero-section/hero-tab/back-tab_1x.webp);
         }
         
     @media screen and (min-device-pixel-ratio: 2),
@@ -104,7 +107,8 @@
         .hero-pictures {
             background-image: linear-gradient(rgba(20, 20, 20, 0.2),
                     rgba(20, 20, 20, 0.2)),
-                url(/img/hero-section/hero-tab/hero-tab-x2-min.jpg);
+                /* url(/img/hero-section/hero-tab/hero-tab-x2-min.jpg); */
+                url(/img/hero-section/hero-tab/back-tab_2x.webp);
         }
 
     }
@@ -152,7 +156,8 @@
     height: 800px;
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
     rgba(20, 20, 20, 0.2)),
-    url(../img/hero-section/hero-desc/hero-desc-x1-min.jpg);  
+    /* url(/img/hero-section/hero-desc/hero-desc-x1-min.jpg);   */
+    url(/img/hero-section/hero-desc/back-desc_1x.webp);
 }
     
     @media screen and (min-device-pixel-ratio: 2),
@@ -161,7 +166,8 @@
         .hero-pictures {
             background-image: linear-gradient(rgba(20, 20, 20, 0.2),
                     rgba(20, 20, 20, 0.2)),
-                url(/img/hero-section/hero-desc/hero-desc-x2-min.jpg);
+                /* url(/img/hero-section/hero-desc/hero-desc-x2-min.jpg); */
+                url(/img/hero-section/hero-desc/back-desc_2x.webp);
         }
 
 
